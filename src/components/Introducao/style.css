@@ -44,6 +44,31 @@
                 font-weight: var(--font-weight-normal);
                 color: var(--white-color);
                 margin-top: 1rem;
+
+                .typed-text {
+                    background: linear-gradient(to right,
+                                #c82424,
+                                #e43939,
+                                #d43e3e);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        color: transparent;
+                        font-weight: var(--font-weight-bold);
+                }    
+
+                .bar-animation {
+                    background: linear-gradient(to right,
+                    #c82424,
+                    #e43939,
+                    #d43e3e);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    color: transparent;
+                    font-weight: var(--font-weight-bold);     
+                    animation: barAnimation 1s ease-in-out infinite; 
+                }          
             }
 
             .contacts {
@@ -72,18 +97,33 @@
                         }
                     }
                 }
-            }
+            }     
         }
 
         .container-image {
-            width: 45%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: 5px solid #c82424;
             display: flex;
             justify-content: center;
+            overflow: hidden;
 
             img {
-                width: 90%;
+                width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
+}
+
+@keyframes barAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }   
 }
