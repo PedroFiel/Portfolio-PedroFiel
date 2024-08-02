@@ -1,14 +1,15 @@
 import './style.css';
-import Pedro from '../../assets/logo_pedro.png';
-import Whatsapp from '../../assets/whatsapp.svg';
-import Github from '../../assets/github.svg';
-import Linkedin from '../../assets/linkedin.svg';
-import Email from '../../assets/email.svg';
-import Curriculo from '../../assets/curriculo.svg';
+import Pedro from '../../assets/contacts/';
+import Whatsapp from '../../assets/contacts/whatsapp.svg';
+import Github from '../../assets/contacts/github.svg';
+import Linkedin from '../../assets/contacts/linkedin.svg';
+import Email from '../../assets/contacts/email.svg';
+import Curriculo from '../../assets/contacts/curriculo.svg';
 
 function Introducao() {
   const firtsTitle = '{%';
   const lastTitle = '%}';
+  
   return (
     <div className='introduction'>
       <div className='content-introduction'>

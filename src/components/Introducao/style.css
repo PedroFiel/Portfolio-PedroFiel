@@ -15,7 +15,7 @@
         margin: 0 auto;
 
         .container-information {
-            width: 50%;
+            width: 55%;
 
             h2 {
                 font-size: 4.8rem;
@@ -76,7 +76,7 @@
         }
 
         .container-image {
-            width: 50%;
+            width: 45%;
             display: flex;
             justify-content: center;
 
