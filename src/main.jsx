@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './styles/globalStyles.css'
-import './styles/globalScripts.js'
+import './styles/variables.css'
 
 import Home from './pages/home/index.jsx'
 
