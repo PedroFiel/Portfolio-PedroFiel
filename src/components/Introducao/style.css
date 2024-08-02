@@ -1,0 +1,89 @@
+.introduction {
+    height: 100vh;
+    width: 100%;
+    padding: 1rem 5rem;
+
+    .content-introduction {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2rem;
+        max-width: var(--page-width);
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        .container-information {
+            width: 50%;
+
+            h2 {
+                font-size: 4.8rem;
+                font-weight: var(--font-weight-semi-bold);
+                color: var(--white-color);
+
+                span.first-element,
+                span.second-element {
+                    font-weight: var(--font-weight-medium);
+                }
+
+                span.name {
+                    background: linear-gradient(to right,
+                            #c82424,
+                            #e43939,
+                            #d43e3e);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+
+            p {
+                font-size: 3.4rem;
+                font-weight: var(--font-weight-normal);
+                color: var(--white-color);
+                margin-top: 1rem;
+            }
+
+            .contacts {
+                width: 100%;
+                margin-top: 1rem;
+
+                .contacts-list {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2rem;
+                    list-style: none;
+
+                    li {
+                        width: auto;
+                        height: auto;
+
+                        a {
+                            text-decoration: none;
+                            display: block;
+
+                            img {
+                                width: 4.5rem;
+                                height: auto;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 90%;
+                height: 100%;
+            }
+        }
+    }
+}

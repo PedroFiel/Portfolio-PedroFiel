@@ -2,11 +2,12 @@
     width: 100%;
     padding: 1rem 5rem;
     background-color: transparent;
+    position: fixed;
 
     .container {
-        max-width: 144rem;
+        max-width: var(--page-width);
         width: 100%;
-        height: 9rem;
+        height: 8rem;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -16,7 +17,7 @@
             .logo {
                 font-size: 2.4rem;
                 font-weight: var(--font-weight-medium);
-                color: var(--black-color);
+                color: var(--white-color);
                 text-decoration: none;
 
                 .destaque {
@@ -39,7 +40,7 @@
                 .menu-item {
                     .menu-link {
                         text-decoration: none;
-                        color: var(--black-color);
+                        color: var(--white-color);
                         font-weight: var(--font-weight-medium);
                         font-size: 1.6rem;
                     }

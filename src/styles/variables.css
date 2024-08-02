@@ -11,6 +11,8 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
 
+    --page-width: 144rem;
+
     /* Font */
     --font-weight-normal: 400;
     --font-weight-medium: 500;
