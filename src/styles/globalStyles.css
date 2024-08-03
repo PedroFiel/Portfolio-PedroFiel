@@ -15,3 +15,17 @@ body {
     font-size: 1.6rem;
     background-color: #0c0c0c;
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--primary-color);
+-webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+background: var(--secondary-color);
+}

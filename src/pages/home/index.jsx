@@ -1,5 +1,6 @@
 import Header from '../../components/Header';
 import Introducao from '../../components/Introducao';
+import SobreMim from '../../components/SobreMim';
 import './style.css';
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
         <>
             <Header />
             <Introducao />
+            <SobreMim />
         </>
     );
 }
