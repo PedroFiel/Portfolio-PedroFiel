@@ -1,0 +1,29 @@
+.skill-card {
+    background: var(--secondary-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    .icon {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .name{
+        font-size: 1.8rem;
+        color: var(--white-color);
+        font-weight: var(--font-weight-semi-bold);
+        text-align: center;
+    }
+
+    .level{
+        font-size: 1.2rem;
+        color: var(--white-color);
+        font-weight: var(--font-weight-normal);
+        text-align: center;
+    }
+}
