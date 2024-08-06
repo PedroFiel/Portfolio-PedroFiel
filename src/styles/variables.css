@@ -12,6 +12,8 @@
     --breakpoint-xl: 1200px;
 
     --page-width: 144rem;
+    --padding-global: 1rem 5rem;
+    --margin-sections: 5rem auto;
 
     /* Font */
     --font-weight-normal: 400;

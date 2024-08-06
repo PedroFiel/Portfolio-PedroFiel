@@ -1,3 +1,4 @@
+import Habilidades from '../../components/Habilidades';
 import Header from '../../components/Header';
 import Introducao from '../../components/Introducao';
 import SobreMim from '../../components/SobreMim';
@@ -9,6 +10,7 @@ function Home() {
             <Header />
             <Introducao />
             <SobreMim />
+            <Habilidades />
         </>
     );
 }

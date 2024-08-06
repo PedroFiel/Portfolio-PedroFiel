@@ -1,0 +1,37 @@
+.skills-section{
+    width: 100%;
+    padding: var(--padding-global);
+
+    .skills-container{
+        max-width: var(--page-width);
+        width: 100%;
+        height: 100%;
+        margin: var(--margin-sections);
+
+        .skills-header{
+            margin-bottom: 3rem;
+
+            h2{
+                font-size: 3.6rem;
+                font-weight: var(--font-weight-semi-bold);
+                background: linear-gradient(to right, #c82424, #e43939, #d43e3e);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+            p{
+                font-size: 1.6rem;
+                color: var(--white-color);
+                font-weight: var(--font-weight-medium);
+            }
+
+        }
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+    }
+}
+    
