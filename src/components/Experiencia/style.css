@@ -1,0 +1,128 @@
+.section-experiencia{
+    width: 100%;
+    padding: var(--padding-global);
+
+    .experiencia-container{
+        max-width: var(--page-width);
+        width: 100%;
+        height: 100%;
+        margin: var(--margin-sections);
+
+        .experiencia-header{
+            h2{
+                font-size: 3.6rem;
+                font-weight: var(--font-weight-semi-bold);
+                background: linear-gradient(to right, #c82424, #e43939, #d43e3e);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .experiencia-content{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .experiencia-images{
+                width: 15%;
+                height: auto;
+
+                .logo-empresa{
+                    width: 100%;
+                    height: auto;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+            }
+
+            .experiencia-group-items{
+                display:flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                
+                .header-empresa{
+                    display: flex;
+                    flex-direction: column;
+
+                    .title{
+                        font-size: 2.8rem;
+                        font-weight: var(--font-weight-semi-bold);
+                        color: var(--white-color);
+                    }
+                    .period-total{
+                        font-size: 1.6rem;
+                        font-weight: var(--font-weight-normal);
+                        color: var(--white-color);
+                    }
+                }
+
+                .experiencia-item{
+                    position: relative;
+                    width: 70%;
+
+                    &.active:before{
+                        content: "";
+                        position: absolute;
+                        left: calc(-5.2rem - 1px);
+                        top: 4rem;
+                        height: calc(100% - 2.4rem);
+                        width: 2px;
+                        background-color: var(--white-color);
+                    }
+
+                    .circle{
+                        position: relative;
+                        display: block;
+                        border-radius: 50%;
+                        height: .8rem;
+                        width: .8rem;
+                        background-color: var(--white-color);
+                        top: 2.3rem;
+                        left: -5.6rem;
+                    }
+
+                    .title{
+                        font-size: 2.2rem;
+                            font-weight: var(--font-weight-semi-bold);
+                            color: var(--white-color);
+                    }
+
+                    .working-time{
+                        font-size: 1.6rem;
+                            font-weight: var(--font-weight-medium);
+                            color: var(--white-color);
+                    }
+
+                    .period{
+                        font-size: 1.4rem;
+                            font-weight: var(--font-weight-normal);
+                            color:#b7b7b7;
+                    }
+
+                    .location{    
+                            font-size: 1.4rem;
+                            font-weight: var(--font-weight-normal);
+                            color: #b7b7b7;
+                    }
+
+                    .item-description{
+                        margin-top: 1rem;
+                        p{
+                            font-size: 1.6rem;
+                            font-weight: var(--font-weight-normal);
+                            color: var(--white-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
