@@ -12,9 +12,6 @@ function Experiencia() {
             const itemContent = itemParagraph.textContent;
     
             if (itemContent.length > 210) {
-                const fullText = itemContent;
-    
-                itemParagraph.textContent = fullText;
                 itemParagraph.classList.add('collapsed');
     
                 const readMoreBtn = document.createElement('span');
