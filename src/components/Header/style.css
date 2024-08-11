@@ -4,6 +4,19 @@
     background-color: transparent;
     position: fixed;
 
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, #06060633 14.67%, #06060600 83.7%);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        z-index: -1;
+    }
+
     .container {
         max-width: var(--page-width);
         width: 100%;

@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "experiencia_images": [
+            {
+                "src": "logo-shakers.png",
+                "alt": "Shakers Agência & Consultoria"
+            }
+        ],
+        "header_empresa": {
+            "empresa": "Shakers Agência & Consultoria",
+            "periodo_total": "1 ano 5 meses"
+        },
+        "experiencia_item": [
+            {
+                "id": 1,
+                "cargo": "Desenvolvedor Shopify Jr.",
+                "tempo_trabalho": "Tempo integral",
+                "periodo": "jun de 2024 - o momento · 3 meses",
+                "localizacao": "São Paulo, Brasil · Remota",
+                "descricao": "Desenvolvedor Front-end especializado em Shopify, com foco na criação de temas altamente customizáveis e responsivos, do zero, para lojas de e-commerce. Utilizando as linguagens base para desenvolver seções personalizadas e proporcionar uma experiência de usuário otimizada."
+            },
+            {
+                "id": 2,
+                "cargo": "Estagiário | Desenvolvedor Shopify",
+                "tempo_trabalho": "Estágio",
+                "periodo": "abr de 2023 - jun de 2024 · 1 ano 3 meses",
+                "localizacao": "São Paulo, Brasil · Remota",
+                "descricao": "Desenvolvedor Front-end Shopify, focado na criação de temas altamente customizáveis e responsivos para lojas de E-commerce. Utilizo HTML, CSS, Liquid e JavaScript para desenvolver seções personalizadas. Além disso, realizo a manutenção de lojas em atividade, incluindo instalação e teste de aplicativos, e auxílio em integrações de mídia social utilizando o Google Tag Manager para criação de eventos."
+            }
+        ]
+    }
+]
