@@ -3,6 +3,43 @@ import './style.css';
 import experiencia from '../../json/experiencia.json';
 
 function Experiencia() {
+    function verifyDescription() {
+        const experienciaItems = document.querySelectorAll('.experiencia-item');
+    
+        experienciaItems.forEach((item) => {
+            const itemDescription = item.querySelector('.item-description');
+            const itemParagraph = itemDescription.querySelector('.item-description p');
+            const itemContent = itemParagraph.textContent;
+    
+            if (itemContent.length > 210) {
+                const fullText = itemContent;
+    
+                itemParagraph.textContent = fullText;
+                itemParagraph.classList.add('collapsed');
+    
+                const readMoreBtn = document.createElement('span');
+                readMoreBtn.textContent = 'Ler mais';
+                readMoreBtn.classList.add('btn_more');
+    
+                readMoreBtn.addEventListener('click', () => {
+                    if (itemParagraph.classList.contains('collapsed')) {
+                        itemParagraph.classList.remove('collapsed');
+                        itemParagraph.classList.add('expanded');
+                        readMoreBtn.textContent = 'Ler menos';
+                    } else {        
+                        itemParagraph.classList.remove('expanded');
+                        itemParagraph.classList.add('collapsed');
+                        readMoreBtn.textContent = 'Ler mais';
+                    }
+                });
+    
+                itemDescription.appendChild(readMoreBtn);
+            }
+        });
+    }
+    
+    window.onload = verifyDescription;
+
     return (
         <div className="section-experiencia">
             <div className="experiencia-container">
