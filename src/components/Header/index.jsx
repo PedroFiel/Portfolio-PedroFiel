@@ -1,6 +1,19 @@
 import './style.css';
 
 function Header() {
+
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.scrollY;
+        const header = document.querySelector('.header');
+        if (currentScroll > lastScrollTop) {
+            header.classList.add('header--hidden');
+        } else {
+            header.classList.remove('header--hidden');
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+    
     return (
         <header className="header">
             <div className="container">
