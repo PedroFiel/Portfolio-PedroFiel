@@ -1,3 +1,4 @@
+import BackToTop from '../../components/BackToTop';
 import Experiencia from '../../components/Experiencia';
 import Habilidades from '../../components/Habilidades';
 import Header from '../../components/Header';
@@ -13,6 +14,7 @@ function Home() {
             <SobreMim />
             <Habilidades />
             <Experiencia />
+            <BackToTop />
         </>
     );
 }
