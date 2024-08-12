@@ -1,24 +1,33 @@
+import React, { useState, useEffect } from 'react';
 import './style.css';
 
 function Header() {
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+    const [isHidden, setIsHidden] = useState(false);
 
-    let lastScrollTop = 0;
-    window.addEventListener('scroll', function() {
-        let currentScroll = window.scrollY;
-        const header = document.querySelector('.header');
-        if (currentScroll > lastScrollTop) {
-            header.classList.add('header--hidden');
-        } else {
-            header.classList.remove('header--hidden');
-        }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    });
-    
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            if (currentScroll > lastScrollTop) {
+                setIsHidden(true);
+            } else {
+                setIsHidden(false);
+            }
+            setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollTop]);
+
     return (
-        <header className="header">
+        <header className={`header ${isHidden ? 'header--hidden' : ''}`}>
             <div className="container">
                 <div className="logo-container">
-                    <a href="#" className="logo">Pedro Fiel <span className="destaque" >| DEV</span></a>
+                    <a href="#" className="logo">Pedro Fiel <span className="destaque">| DEV</span></a>
                 </div>
                 <nav className="menu" aria-label="Main Navigation">
                     <ul className="menu-list">

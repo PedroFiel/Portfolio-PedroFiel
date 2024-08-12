@@ -10,12 +10,11 @@ function Home() {
     return (
         <>
             <Header />
-            <BackToTop />
             <Introducao />
             <SobreMim />
             <Habilidades />
-            <Experiencia />
-            
+            <Experiencia />     
+            <BackToTop />
         </>
     );
 }

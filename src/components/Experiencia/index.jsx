@@ -1,41 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import experiencia from '../../json/experiencia.json';
 
 function Experiencia() {
-    function verifyDescription() {
-        const experienciaItems = document.querySelectorAll('.experiencia-item');
-    
-        experienciaItems.forEach((item) => {
-            const itemDescription = item.querySelector('.item-description');
-            const itemParagraph = itemDescription.querySelector('.item-description p');
-            const itemContent = itemParagraph.textContent;
-    
-            if (itemContent.length > 210) {
-                itemParagraph.classList.add('collapsed');
-    
-                const readMoreBtn = document.createElement('span');
-                readMoreBtn.textContent = 'Ler mais';
-                readMoreBtn.classList.add('btn_more');
-    
-                readMoreBtn.addEventListener('click', () => {
-                    if (itemParagraph.classList.contains('collapsed')) {
-                        itemParagraph.classList.remove('collapsed');
-                        itemParagraph.classList.add('expanded');
-                        readMoreBtn.textContent = 'Ler menos';
-                    } else {        
-                        itemParagraph.classList.remove('expanded');
-                        itemParagraph.classList.add('collapsed');
-                        readMoreBtn.textContent = 'Ler mais';
-                    }
-                });
-    
-                itemDescription.appendChild(readMoreBtn);
-            }
-        });
-    }
-    
-    window.onload = verifyDescription;
+    const [expandedItems, setExpandedItems] = useState([]);
+
+    useEffect(() => {
+        const initialExpandedState = experiencia.flatMap(exp =>
+            exp.experiencia_item.map(item => ({
+                id: item.id,
+                isExpanded: item.descricao.length <= 210
+            }))
+        );
+        setExpandedItems(initialExpandedState);
+    }, []);
+
+    const toggleExpand = (id) => {
+        setExpandedItems(prevState =>
+            prevState.map(item =>
+                item.id === id ? { ...item, isExpanded: !item.isExpanded } : item
+            )
+        );
+    };
 
     return (
         <div className="section-experiencia">
@@ -59,18 +45,26 @@ function Experiencia() {
                                 <h2 className='title'>{exp.header_empresa.empresa}</h2>
                                 <p className='period-total'>{exp.header_empresa.periodo_total}</p>
                             </div>
-                            {exp.experiencia_item.map(item => (
-                                <div key={item.id} className={`experiencia-item ${item.id === 1 ? 'active' : '' }`}>
-                                    <span className='circle'></span>
-                                    <h3 className='title'>{item.cargo}</h3>
-                                    <p className='working-time'>{item.tempo_trabalho}</p>
-                                    <p className='period'>{item.periodo}</p>
-                                    <p className='location'>{item.localizacao}</p>
-                                    <div className='item-description'>
-                                        <p>{item.descricao}</p>
+                            {exp.experiencia_item.map(item => {
+                                const isExpanded = expandedItems.find(expItem => expItem.id === item.id)?.isExpanded;
+                                return (
+                                    <div key={item.id} className={`experiencia-item ${item.id === 1 ? 'active' : '' }`}>
+                                        <span className='circle'></span>
+                                        <h3 className='title'>{item.cargo}</h3>
+                                        <p className='working-time'>{item.tempo_trabalho}</p>
+                                        <p className='period'>{item.periodo}</p>
+                                        <p className='location'>{item.localizacao}</p>
+                                        <div className='item-description'>
+                                            <p className={isExpanded ? 'expanded' : 'collapsed'}>{item.descricao}</p>
+                                            {item.descricao.length > 210 && (
+                                                <span className='btn_more' onClick={() => toggleExpand(item.id)}>
+                                                    {isExpanded ? 'Ler menos' : 'Ler mais'}
+                                                </span>
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 ))}
