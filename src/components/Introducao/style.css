@@ -101,10 +101,10 @@
         }
 
         .container-image {
-            width: 600px;
-            height: 600px;
+            width: 60rem;
+            height: 60rem;
             border-radius: 50%;
-            border: 5px solid #c82424;
+            border: .5rem solid #c82424;
             display: flex;
             justify-content: center;
             overflow: hidden;

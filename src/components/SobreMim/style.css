@@ -19,7 +19,7 @@
             height: auto;
             border-radius: 0.5rem;
             overflow: hidden;
-            box-shadow: 8px 10px 15px #c82424;
+            box-shadow: .8rem 1rem 1.5rem #c82424;
 
             img {
                 width: 100%;

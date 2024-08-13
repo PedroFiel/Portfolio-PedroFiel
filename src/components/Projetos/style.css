@@ -9,7 +9,7 @@
         margin: var(--margin-sections);
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
 
         .header-projects{
             h1{

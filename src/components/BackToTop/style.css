@@ -1,9 +1,9 @@
 .back-to-top{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
     background: linear-gradient(90deg, #c82424, #e43939, #d43e3e);
     color: white;
     border-radius: 50%;

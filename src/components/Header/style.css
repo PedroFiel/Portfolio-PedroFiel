@@ -17,8 +17,8 @@
         right: 0;
         bottom: 0;
         background: linear-gradient(180deg, #06060633 14.67%, #06060600 83.7%);
-        -webkit-backdrop-filter: blur(4px);
-        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(.4rem);
+        backdrop-filter: blur(.4rem);
         z-index: -1;
     }
 
@@ -68,7 +68,7 @@
                             display: block;
                             margin: 0 auto;
                             width: 0;
-                            height: 2px;
+                            height: .2rem;
                             background-color: var(--primary-color);
                             transition: width 0.5s;
                         }
