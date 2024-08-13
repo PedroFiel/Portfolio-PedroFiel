@@ -23,19 +23,37 @@ function Header() {
         };
     }, [lastScrollTop]);
 
+    const handleScrollToSection = (event, id) => {
+        event.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <header className={`header ${isHidden ? 'header--hidden' : ''}`}>
             <div className="container">
                 <div className="logo-container">
-                    <a href="#" className="logo">Pedro Fiel <span className="destaque">| DEV</span></a>
+                    <a href="/" className="logo">Pedro Fiel <span className="destaque">| DEV</span></a>
                 </div>
                 <nav className="menu" aria-label="Main Navigation">
                     <ul className="menu-list">
-                        <li className="menu-item"><a href="#" className="menu-link">Inicio</a></li>
-                        <li className="menu-item"><a href="#" className="menu-link">Sobre Mim</a></li>
-                        <li className="menu-item"><a href="#" className="menu-link">Habilidades</a></li>
-                        <li className="menu-item"><a href="#" className="menu-link">Projetos</a></li>
-                        <li className="menu-item"><a href="#" className="menu-link">Experiências</a></li>
+                        <li className="menu-item">
+                            <a href="#inicio" className="menu-link" onClick={(e) => handleScrollToSection(e, 'inicio')}>Inicio</a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="#sobre-mim" className="menu-link" onClick={(e) => handleScrollToSection(e, 'sobre-mim')}>Sobre Mim</a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="#habilidades" className="menu-link" onClick={(e) => handleScrollToSection(e, 'habilidades')}>Habilidades</a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="#experiencias" className="menu-link" onClick={(e) => handleScrollToSection(e, 'experiencias')}>Experiências</a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="#projetos" className="menu-link" onClick={(e) => handleScrollToSection(e, 'projetos')}>Projetos</a>
+                        </li>   
                     </ul>
                 </nav>
             </div>

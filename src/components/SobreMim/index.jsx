@@ -3,7 +3,7 @@ import Pedro from '../../assets/pedro-2.jpeg';
 
 function SobreMim() {
   return (
-    <div className='sobre_mim-section'>   
+    <div id='sobre-mim' className='sobre_mim-section'>   
         <div className='sobre_mim-container'>
             <div className='image-container'>
                 <img src={Pedro} alt="" />

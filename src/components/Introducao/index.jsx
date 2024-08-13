@@ -36,7 +36,7 @@ function Introducao() {
   }, [charIndex, currentWordIndex]);
 
   return (
-    <div className='introduction'>
+    <div id='inicio' className='introduction'>
       <div className='content-introduction'>
         <div className='container-information'>
           <h2>

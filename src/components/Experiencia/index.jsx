@@ -24,7 +24,7 @@ function Experiencia() {
     };
 
     return (
-        <div className="section-experiencia">
+        <div id='experiencias' className="section-experiencia">
             <div className="experiencia-container">
                 <div className='experiencia-header'>
                     <h2>Experiência</h2>

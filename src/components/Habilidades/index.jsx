@@ -4,7 +4,7 @@ import skills from '../../json/skills.json';
 
 const Habilidades = () => {
   return (
-    <div className='skills-section'>
+    <div id='habilidades' className='skills-section'>
         <div className='skills-container'>
             <div className='skills-header'>
                 <h2>Habilidades</h2>
