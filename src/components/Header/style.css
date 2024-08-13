@@ -61,6 +61,21 @@
                         color: var(--white-color);
                         font-weight: var(--font-weight-medium);
                         font-size: 1.6rem;
+
+
+                        &:after{
+                            content: "";
+                            display: block;
+                            margin: 0 auto;
+                            width: 0;
+                            height: 2px;
+                            background-color: var(--primary-color);
+                            transition: width 0.5s;
+                        }
+
+                        &:hover:after{
+                            width: 100%;
+                        }
                     }
                 }
             }
