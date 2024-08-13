@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "nome": "Projeto 1",
+        "text_techs": "Tech utilizada:",
+        "techs": ["React","HTML", "CSS", "JavaScript"],
+        "descricao": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.",
+        "card_buttons": [
+                {
+                "id": 1,
+                "text": "Ver projeto",
+                "link": "https://www.google.com.br"
+                },
+                {
+                "id": 2,
+                "text": "Github",
+                "link": "https://www.google.com.br"
+            }  
+        ]
+    },
+    {
+        "id": 2,
+        "nome": "Projeto 2",
+        "text_techs": "Tech utilizada:",
+        "techs": ["React", "CSS", "JavaScript"],
+        "descricao": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.A API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto",
+        "card_buttons": [
+                {
+                "id": 1,
+                "text": "Ver projeto",
+                "link": "https://www.google.com.br"
+                },
+                {
+                "id": 2,
+                "text": "Github",
+                "link": "https://www.google.com.br"
+            }  
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "Projeto 3",
+        "text_techs": "Tech utilizada:",
+        "techs": ["HTML", "CSS", "JavaScript"],
+        "descricao": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.",
+        "card_buttons": [
+                {
+                "id": 1,
+                "text": "Ver projeto",
+                "link": "https://www.google.com.br"
+                },
+                {
+                "id": 2,
+                "text": "Github",
+                "link": "https://www.google.com.br"
+            }  
+        ]
+    },
+    {
+        "id": 4,
+        "nome": "Projeto 4",
+        "text_techs": "Tech utilizada:",
+        "techs": ["HTML", "CSS", "JavaScript"],
+        "descricao": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.",
+        "card_buttons": [
+                {
+                "id": 1,
+                "text": "Ver projeto",
+                "link": "https://www.google.com.br"
+                },
+                {
+                "id": 2,
+                "text": "Github",
+                "link": "https://www.google.com.br"
+            }  
+        ]
+    }
+]

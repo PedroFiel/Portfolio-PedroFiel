@@ -35,7 +35,6 @@ function Header() {
                         <li className="menu-item"><a href="#" className="menu-link">Sobre Mim</a></li>
                         <li className="menu-item"><a href="#" className="menu-link">Habilidades</a></li>
                         <li className="menu-item"><a href="#" className="menu-link">Projetos</a></li>
-                        <li className="menu-item"><a href="#" className="menu-link">Formação</a></li>
                         <li className="menu-item"><a href="#" className="menu-link">Experiências</a></li>
                     </ul>
                 </nav>
