@@ -1,5 +1,6 @@
 import BackToTop from '../../components/BackToTop';
 import Experiencia from '../../components/Experiencia';
+import Footer from '../../components/Footer';
 import Habilidades from '../../components/Habilidades';
 import Header from '../../components/Header';
 import Introducao from '../../components/Introducao';
@@ -17,6 +18,7 @@ function Home() {
             <Experiencia />  
             <Projetos />   
             <BackToTop />
+            <Footer />
         </>
     );
 }
