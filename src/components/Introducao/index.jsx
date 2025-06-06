@@ -46,7 +46,7 @@ function Introducao() {
           <div className='contacts'>
             <ul className='contacts-list'>
               <li><a href="https://wa.me/5511991502747" target="_blank"><img src={Whatsapp} alt=""/></a></li>
-              <li><a href="mailto:pedrinhoffiel@gmail.com" target="_blank"><img src={Email} alt=""/></a></li>
+              <li><a href="mailto:pedrofiel.dev@gmail.com" target="_blank"><img src={Email} alt=""/></a></li>
               <li><a href="https://github.com/PedroFiel" target="_blank"><img src={Github} alt=""/></a></li>
               <li><a href="https://www.linkedin.com/in/pedro-freitas-fiel-bb9315250/" target="_blank"><img src={Linkedin} alt=""/></a></li>
               {/* <li><a href="#"><img src={Curriculo} alt=""/></a></li> */}
