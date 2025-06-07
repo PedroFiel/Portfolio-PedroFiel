@@ -2,13 +2,13 @@
     width: 100%;
     padding: var(--padding-global);
 
-    .skills-container{
+    .skills__container{
         max-width: var(--page-width);
         width: 100%;
         height: 100%;
         margin: var(--margin-sections);
 
-        .skills-header{
+        .skills__header{
             margin-bottom: 3rem;
 
             h2{
@@ -27,7 +27,7 @@
             }
 
         }
-        .skills{
+        .skills__list{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             gap: 2rem;

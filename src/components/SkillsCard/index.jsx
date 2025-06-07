@@ -1,10 +1,10 @@
 import './style.css';
-import { HabilidadesCardProps } from './types';
+import { SkillsCardProps } from './types';
 
-const HabilidadesCard = ({ name, icon, level }) => (
+const SkillsCard = ({ name, icon, level }) => (
     <div className="skill-card">
         <img 
-            src={`assets/img/habilidades/${icon}`} 
+            src={`assets/img/skills/${icon}`} 
             alt={`${name} icon`} 
             className="icon"
             loading="lazy"
@@ -14,6 +14,6 @@ const HabilidadesCard = ({ name, icon, level }) => (
     </div>
 );
 
-HabilidadesCard.propTypes = HabilidadesCardProps;
+SkillsCard.propTypes = SkillsCardProps;
 
-export default HabilidadesCard;
+export default SkillsCard;

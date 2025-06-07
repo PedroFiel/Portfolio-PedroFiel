@@ -1,23 +1,23 @@
-import BackToTop from '../../components/BackToTop';
+import ScrollToTop from '../../components/ScrollToTop';
 import Experience from '../../components/Experience';
 import Footer from '../../components/Footer';
-import Habilidades from '../../components/Habilidades'; 
+import Skills from '../../components/Skills'; 
 import Header from '../../components/Header';
-import Introducao from '../../components/Introducao';
+import Introduction from '../../components/Introduction';
 import Projects from '../../components/Projects';
-import SobreMim from '../../components/SobreMim';
+import AboutMe from '../../components/AboutMe';
 import './style.css';
 
 function Home() {
     return (
         <>
             <Header />
-            <Introducao />
-            <SobreMim />
-            <Habilidades />
+            <Introduction />
+            <AboutMe />
+            <Skills />
             <Experience />  
             <Projects />   
-            <BackToTop />
+            <ScrollToTop />
             <Footer />
         </>
     );

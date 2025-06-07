@@ -33,26 +33,26 @@ function Header() {
 
     return (
         <header className={`header ${isHidden ? 'header--hidden' : ''}`}>
-            <div className="container">
-                <div className="logo-container">
-                    <a href="/" className="logo">Pedro Fiel <span className="destaque">| DEV</span></a>
+            <div className="header__container">
+                <div className="header__logo-container">
+                    <a href="/" className="header__logo">Pedro Fiel <span className="header__logo-destaque">| DEV</span></a>
                 </div>
-                <nav className="menu" aria-label="Main Navigation">
-                    <ul className="menu-list">
-                        <li className="menu-item">
-                            <a href="#inicio" className="menu-link" onClick={(e) => handleScrollToSection(e, 'inicio')}>Inicio</a>
+                <nav className="header__menu" aria-label="Main Navigation">
+                    <ul className="header__menu-list">
+                        <li className="header__menu-item">
+                            <a href="#introduction" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'introduction')}>Inicio</a>
                         </li>
-                        <li className="menu-item">
-                            <a href="#sobre-mim" className="menu-link" onClick={(e) => handleScrollToSection(e, 'sobre-mim')}>Sobre Mim</a>
+                        <li className="header__menu-item">
+                            <a href="#about-me" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'about-me')}>Sobre Mim</a>
                         </li>
-                        <li className="menu-item">
-                            <a href="#habilidades" className="menu-link" onClick={(e) => handleScrollToSection(e, 'habilidades')}>Habilidades</a>
+                        <li className="header__menu-item">
+                            <a href="#skills" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'skills')}>Habilidades</a>
                         </li>
-                        <li className="menu-item">
-                            <a href="#experience" className="menu-link" onClick={(e) => handleScrollToSection(e, 'experience')}>Experiências</a>
+                        <li className="header__menu-item">
+                            <a href="#experience" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'experience')}>Experiências</a>
                         </li>
-                        <li className="menu-item">
-                            <a href="#projetos" className="menu-link" onClick={(e) => handleScrollToSection(e, 'projetos')}>Projetos</a>
+                        <li className="header__menu-item">
+                            <a href="#projects" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'projects')}>Projetos</a>
                         </li>   
                     </ul>
                 </nav>
