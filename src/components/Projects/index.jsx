@@ -4,7 +4,7 @@ import projects from '../../json/projects.json';
 
 function Projects() {
     return (
-      <div id='projetos' className="section-projects">
+      <div id='projects' className="section-projects">
         <div className='container-projects'>
           <div className='header-projects'>
             <h1>Projetos</h1>

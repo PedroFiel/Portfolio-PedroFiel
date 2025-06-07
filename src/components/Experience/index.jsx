@@ -36,7 +36,7 @@ function Experience() {
         );
     };
 
-    const calcularPeriod = (startDate, endDate = '') => {
+    const calculatePeriod = (startDate, endDate = '') => {
         const start = new Date(startDate);
         const end = endDate ? new Date(endDate) : new Date();
         const total = end.getTime() - start.getTime();
@@ -61,7 +61,7 @@ function Experience() {
                 </div>
 
                 {experience.map(exp => {
-                    const period = calcularPeriod(
+                    const period = calculatePeriod(
                         exp.header_company.period_start,
                         exp.header_company.period_end
                     );
@@ -84,7 +84,7 @@ function Experience() {
                                 
                                 {exp.experience_item.map(item => {
                                     const isExpanded = expandedItems.find(expItem => expItem.id === item.id)?.isExpanded;
-                                    const itemPeriod = calcularPeriod(item.periodo_inicio, item.periodo_fim);
+                                    const itemPeriod = calculatePeriod(item.period_start, item.period_end);
 
                                     return (
                                         <div key={item.id} className={`section-experience__item ${item.id === 1 ? 'active' : ''}`}>
