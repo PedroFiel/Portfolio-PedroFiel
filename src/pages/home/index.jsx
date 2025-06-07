@@ -1,10 +1,10 @@
 import BackToTop from '../../components/BackToTop';
-import Experiencia from '../../components/Experiencia';
+import Experience from '../../components/Experience';
 import Footer from '../../components/Footer';
-import Habilidades from '../../components/Habilidades';
+import Habilidades from '../../components/Habilidades'; 
 import Header from '../../components/Header';
 import Introducao from '../../components/Introducao';
-import Projetos from '../../components/Projetos';
+import Projects from '../../components/Projects';
 import SobreMim from '../../components/SobreMim';
 import './style.css';
 
@@ -15,8 +15,8 @@ function Home() {
             <Introducao />
             <SobreMim />
             <Habilidades />
-            <Experiencia />  
-            <Projetos />   
+            <Experience />  
+            <Projects />   
             <BackToTop />
             <Footer />
         </>

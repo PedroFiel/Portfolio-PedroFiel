@@ -1,8 +1,8 @@
-import CardProjeto from '../CardProjeto';
+import CardProject from '../CardProject';
 import './style.css';
-import projetos from '../../json/projetos.json';
+import projects from '../../json/projects.json';
 
-function Projetos() {
+function Projects() {
     return (
       <div id='projetos' className="section-projects">
         <div className='container-projects'>
@@ -12,8 +12,8 @@ function Projetos() {
           </div>
   
           <div className='cards-projects'>
-            {projetos.map(projeto => (
-              <CardProjeto key={projeto.id} projeto={projeto} />
+            {projects.map(project => (
+              <CardProject key={project.id} project={project} />
             ))}
           </div>
         </div>
@@ -21,4 +21,4 @@ function Projetos() {
     );
   }
 
-export default Projetos;
+export default Projects;

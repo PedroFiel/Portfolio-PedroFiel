@@ -49,7 +49,7 @@ function Header() {
                             <a href="#habilidades" className="menu-link" onClick={(e) => handleScrollToSection(e, 'habilidades')}>Habilidades</a>
                         </li>
                         <li className="menu-item">
-                            <a href="#experiencias" className="menu-link" onClick={(e) => handleScrollToSection(e, 'experiencias')}>Experiências</a>
+                            <a href="#experience" className="menu-link" onClick={(e) => handleScrollToSection(e, 'experience')}>Experiências</a>
                         </li>
                         <li className="menu-item">
                             <a href="#projetos" className="menu-link" onClick={(e) => handleScrollToSection(e, 'projetos')}>Projetos</a>

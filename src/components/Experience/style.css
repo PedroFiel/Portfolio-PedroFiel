@@ -1,14 +1,14 @@
-.section-experiencia {
+.section-experience {
     width: 100%;
     padding: var(--padding-global);
 
-    .experiencia-container {
+    .section-experience__container {
         max-width: var(--page-width);
         width: 100%;
         height: 100%;
         margin: var(--margin-sections);
 
-        .experiencia-header {
+        .section-experience__header {
             h2 {
                 font-size: 3.6rem;
                 font-weight: var(--font-weight-semi-bold);
@@ -21,13 +21,13 @@
             }
         }
 
-        .experiencia-content {
+        .section-experience__content {
             display: grid;
             grid-template-columns: 6% 90%;
             gap: 1rem;
 
-            .experiencia-images {
-                .logo-empresa {
+            .section-experience__images {
+                .section-experience__logo-company {
                     width: 100%;
                     height: auto;
 
@@ -40,12 +40,12 @@
                 }
             }
 
-            .experiencia-group-items {
+            .section-experience__group-items {
                 display: flex;
                 flex-direction: column;
                 gap: 1.5rem;
 
-                .header-empresa {
+                .section-experience__header-company {
                     display: flex;
                     flex-direction: column;
 
@@ -62,7 +62,7 @@
                     }
                 }
 
-                .experiencia-item {
+                .section-experience__item {
                     position: relative;
                     width: 70%;
 
@@ -111,12 +111,12 @@
                         color: #b7b7b7;
                     }
 
-                    .item-description-wrapper {
+                    .section-experience__item-description-wrapper {
                         position: relative;
                         margin-top: 1rem;
                     }
 
-                    .item-description {
+                    .section-experience__item-description {
                         overflow: hidden;
                         transition: height 0.3s ease-in-out;
 
@@ -131,7 +131,7 @@
                             height: 5rem;
                         }
                     }
-                    .btn_more {
+                    .section-experience__btn-more {
                         background: none;
                         border: none;
                         padding: 0;
