@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './style.css';
 import experiencia from '../../json/experiencia.json';
+import { openDropdown, closeDropdown } from '../../utils/dropdown';
 
 function Experiencia() {
     const [expandedItems, setExpandedItems] = useState([]);
+    const descriptionRefs = useRef({});
 
     useEffect(() => {
         const initialExpandedState = experiencia.flatMap(exp =>
@@ -16,6 +18,17 @@ function Experiencia() {
     }, []);
 
     const toggleExpand = (id) => {
+        const descriptionElement = descriptionRefs.current[id];
+        const isCurrentlyExpanded = expandedItems.find(item => item.id === id)?.isExpanded;
+
+        if (!descriptionElement) return;
+
+        if (isCurrentlyExpanded) {
+            closeDropdown(descriptionElement);
+        } else {
+            openDropdown(descriptionElement);
+        }
+
         setExpandedItems(prevState =>
             prevState.map(item =>
                 item.id === id ? { ...item, isExpanded: !item.isExpanded } : item
@@ -80,17 +93,31 @@ function Experiencia() {
                                             <p className='working-time'>{item.tempo_trabalho}</p>
                                             <p className='period'>{itemPeriodo.anos} {itemPeriodo.textoAnos} {itemPeriodo.meses} {itemPeriodo.textoMeses}</p>
                                             <p className='location'>{item.localizacao}</p>
-                                            <div className='item-description'>
-                                                <p className={isExpanded ? 'expanded' : 'collapsed'}>{item.descricao}</p>
+                                            <div className='item-description-wrapper'>
+                                                <div 
+                                                    className='item-description'
+                                                    ref={el => descriptionRefs.current[item.id] = el}
+                                                    data-closed={!isExpanded || undefined}
+                                                    data-min-height='5rem'
+                                                >
+                                                    {item.descricao.includes('<br>') ? (
+                                                        <ul>
+                                                            {item.descricao.split('<br>').map((item, index) => (
+                                                                <li key={index}>{item.trim()}</li>
+                                                            ))}
+                                                        </ul>
+                                                    ) : (
+                                                        <p>{item.descricao}</p>
+                                                    )}
+                                                </div>
                                                 {item.descricao.length > 210 && (
-                                                    <span 
+                                                    <button 
                                                         className='btn_more' 
                                                         onClick={() => toggleExpand(item.id)}
-                                                        role="button"
-                                                        tabIndex={0}
+                                                        type="button"
                                                     >
                                                         {isExpanded ? 'Ler menos' : 'Ler mais'}
-                                                    </span>
+                                                    </button>
                                                 )}
                                             </div>
                                         </div>
