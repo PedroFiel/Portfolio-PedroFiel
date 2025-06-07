@@ -18,15 +18,15 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.3rem;
     background: var(--secondary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--primary-color);
--webkit-border-radius: 1ex;
+    background: var(--primary-color);
+    -webkit-border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-corner {
-background: var(--secondary-color);
+    background: var(--secondary-color);
 }

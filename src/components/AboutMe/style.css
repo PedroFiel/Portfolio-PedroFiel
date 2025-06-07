@@ -1,9 +1,8 @@
-.sobre_mim-section {
+.about-me__section {
     width: 100%;
-    padding: var(--padding-global);
-    
+    padding-block: var(--padding-block);
 
-    .sobre_mim-container {
+    .about-me__container {
         display: flex;
         flex-direction: row;
         gap: 2rem;
@@ -12,9 +11,10 @@
         max-width: var(--page-width);
         width: 100%;
         height: 100%;
-        margin: var(--margin-sections);
+        margin: 0 auto;
+        
 
-        .image-container {
+        .about-me__image {
             width: 35%;
             height: auto;
             border-radius: 0.5rem;
@@ -29,18 +29,18 @@
             }
         }
 
-        .information-container {
+        .about-me__information {
             width: 60%;
             display: flex;
             flex-direction: column;
             gap: 1rem;
 
-            .sobre_mim-content {
+            .about-me__content {
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
 
-                .sobre_mim-content-header {
+                .about-me__content-header {
                     display: flex;
                     flex-direction: column;
 
@@ -61,7 +61,7 @@
                     }
                 }
 
-                .sobre_mim-content-description {
+                .about-me__content-description {
                     display: flex;
                     flex-direction: column;
                     gap: 1rem;
@@ -79,12 +79,12 @@
                 }
             }
 
-            .formacao-content {
+            .about-me__formation {
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
 
-                .formacao-content-header {
+                .about-me__formation-header {
                     h3 {
                         font-size: 2.6rem;
                         font-weight: var(--font-weight-semi-bold);
@@ -96,12 +96,12 @@
                     }
                 }
 
-                .formacao-content-description {
+                .about-me__formation-description {
                     display: flex;
                     flex-direction: column;
                     gap: 1rem;
 
-                    .formacao-block {
+                    .about-me__formation-block {
                         display: flex;
                         flex-direction: column;
                         background-color: var(--secondary-color);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './style.css';
 import Pedro from '../../assets/pedro.jpeg';
 import Whatsapp from '../../assets/contacts/whatsapp.svg';
@@ -7,11 +7,12 @@ import Linkedin from '../../assets/contacts/linkedin.svg';
 import Email from '../../assets/contacts/email.svg';
 import Curriculo from '../../assets/contacts/curriculo.svg';
 
-function Introducao() {
+const keyWords = ['Front-end', 'Web', 'Shopify'];
+
+function Introduction() {
   const firstTitle = '{%';
   const lastTitle = '%}';
 
-  const keyWords = ['Front-end', 'Web', 'Shopify'];
   const [currentWord, setCurrentWord] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -36,29 +37,29 @@ function Introducao() {
   }, [charIndex, currentWordIndex]);
 
   return (
-    <div id='inicio' className='introduction'>
-      <div className='content-introduction'>
-        <div className='container-information'>
+    <div id='introduction' className='introduction'>
+      <div className='introduction__content'>
+        <div className='introduction__information'>
           <h2>
             <span className='first-element'>{firstTitle}</span> Olá! Eu sou o <span className='name'>Pedro Fiel</span> <span className='second-element'>{lastTitle}</span>
           </h2>
           <p>Desenvolvedor <span className='typed-text'>{currentWord}</span><span className='bar-animation'>|</span></p>
-          <div className='contacts'>
-            <ul className='contacts-list'>
-              <li><a href="https://wa.me/5511991502747" target="_blank"><img src={Whatsapp} alt=""/></a></li>
-              <li><a href="mailto:pedrofiel.dev@gmail.com" target="_blank"><img src={Email} alt=""/></a></li>
-              <li><a href="https://github.com/PedroFiel" target="_blank"><img src={Github} alt=""/></a></li>
-              <li><a href="https://www.linkedin.com/in/pedro-freitas-fiel-bb9315250/" target="_blank"><img src={Linkedin} alt=""/></a></li>
-              {/* <li><a href="#"><img src={Curriculo} alt=""/></a></li> */}
+          <div className='introduction__contacts'>
+            <ul className='introduction__contacts-list'>
+              <li><a href="https://wa.me/5511991502747" target="_blank"><img src={Whatsapp} alt="Icone Whatsapp"/></a></li>
+              <li><a href="mailto:pedrofiel.dev@gmail.com" target="_blank"><img src={Email} alt="Icone Email"/></a></li>
+              <li><a href="https://github.com/PedroFiel" target="_blank"><img src={Github} alt="Icone Github"/></a></li>
+              <li><a href="https://www.linkedin.com/in/pedro-freitas-fiel-bb9315250/" target="_blank"><img src={Linkedin} alt="Icone Linkedin"/></a></li>
+              <li><a href="#"><img src={Curriculo} alt="Icone Curriculo"/></a></li>
             </ul>
           </div>
         </div>
-        <div className='container-image'>
-          <img src={Pedro} alt=""/>
+        <div className='introduction__image'>
+          <img src={Pedro} alt="Foto de Perfil"/>
         </div>
       </div>
     </div>
   );
 }
 
-export default Introducao;
+export default Introduction;
