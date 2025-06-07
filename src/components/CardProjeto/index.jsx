@@ -1,4 +1,5 @@
 import "./style.css";
+import { cardProjetoProps } from './types';
 
 function CardProjeto({ projeto }) {
     return (
@@ -25,5 +26,7 @@ function CardProjeto({ projeto }) {
       </div>
     );
   }
+
+CardProjeto.propTypes = cardProjetoProps;
 
 export default CardProjeto;
