@@ -12,13 +12,13 @@ function Home() {
     return (
         <>
             <Header />
-            {/* <Introduction />
+            <Introduction />
             <AboutMe />
             <Skills />
             <Experience />  
             <Projects />   
             <ScrollToTop />
-            <Footer /> */}
+            <Footer />
         </>
     );
 }
