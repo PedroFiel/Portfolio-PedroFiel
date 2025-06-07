@@ -1,7 +1,7 @@
 .introduction {
     height: 100vh;
     width: 100%;
-    padding: var(--padding-global);
+    padding-block: var(--padding-block);
 
     .introduction__content {
         display: flex;

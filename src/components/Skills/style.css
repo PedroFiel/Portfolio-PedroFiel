@@ -1,12 +1,12 @@
 .skills-section{
     width: 100%;
-    padding: var(--padding-global);
+    padding-block: var(--padding-block);
 
     .skills__container{
         max-width: var(--page-width);
         width: 100%;
         height: 100%;
-        margin: var(--margin-sections);
+        margin: 0 auto;
 
         .skills__header{
             margin-bottom: 3rem;

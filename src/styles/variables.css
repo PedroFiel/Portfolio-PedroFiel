@@ -5,14 +5,8 @@
     --white-color: #fff;
     --black-color: #000;
 
-    /* Breakpoints */
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-
-    --page-width: 144rem;
-    --padding-global: 1rem 5rem;
+    --page-width: 90vw;
+    --padding-block: 5rem;
     --margin-sections: 5rem auto;
 
     /* Font */
@@ -20,4 +14,44 @@
     --font-weight-medium: 500;
     --font-weight-semi-bold: 600;
     --font-weight-bold: 700;
+}
+
+@keyframes openMenuEntry {
+    0% {
+        display: none;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    1% {
+        display: flex;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeMenuExit {
+    0%{
+        opacity: 1;
+        display: flex;
+        transform: translateX(0);
+    }
+
+    99%{
+        opacity: 1;
+        display: flex;
+        transform: translateX(100%);
+    }
+
+    100%{
+        opacity: 0;
+        display: none;
+        transform: translateX(100%);
+    }
 }

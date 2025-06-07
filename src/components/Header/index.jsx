@@ -1,9 +1,27 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import NavigationMenu from '../NavigationMenu';
+import MenuIcon from '../../assets/header/menu-icon.svg?react';
+import CloseIcon from '../../assets/header/close-icon.svg?react';
+import Linkedin from '../../assets/contacts/linkedin.svg?react';
+import Curriculo from '../../assets/contacts/curriculo.svg?react';
+import Whatsapp from '../../assets/contacts/whatsapp.svg?react';
+import Email from '../../assets/contacts/email.svg?react';
+import Github from '../../assets/contacts/github.svg?react';
 import './style.css';
 
 function Header() {
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [isHidden, setIsHidden] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+    
+    const icons = {
+        Linkedin,
+        Curriculo,
+        Whatsapp,
+        Email,
+        Github
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,9 +43,36 @@ function Header() {
 
     const handleScrollToSection = (event, id) => {
         event.preventDefault();
+
+        if(isMenuOpen){
+            handleMenuIcon();
+        }
+
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const handleMenuIcon = () => {
+        setIsMenuOpen(!isMenuOpen);
+
+        if(!isMenuOpen){
+            openMenuIcon();
+        } else {
+            closeMenuIcon();
+        }
+    };
+
+    const openMenuIcon = () => {
+        if (menuRef.current) {
+            menuRef.current.setAttribute('open', '');
+        }
+    };
+
+    const closeMenuIcon = () => {
+        if (menuRef.current) {
+            menuRef.current.removeAttribute('open');
         }
     };
 
@@ -37,25 +82,16 @@ function Header() {
                 <div className="header__logo-container">
                     <a href="/" className="header__logo">Pedro Fiel <span className="header__logo-destaque">| DEV</span></a>
                 </div>
-                <nav className="header__menu" aria-label="Main Navigation">
-                    <ul className="header__menu-list">
-                        <li className="header__menu-item">
-                            <a href="#introduction" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'introduction')}>Inicio</a>
-                        </li>
-                        <li className="header__menu-item">
-                            <a href="#about-me" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'about-me')}>Sobre Mim</a>
-                        </li>
-                        <li className="header__menu-item">
-                            <a href="#skills" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'skills')}>Habilidades</a>
-                        </li>
-                        <li className="header__menu-item">
-                            <a href="#experience" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'experience')}>Experiências</a>
-                        </li>
-                        <li className="header__menu-item">
-                            <a href="#projects" className="header__menu-link" onClick={(e) => handleScrollToSection(e, 'projects')}>Projetos</a>
-                        </li>   
-                    </ul>
-                </nav>
+
+                <div className="header-menu--mobile">
+                    <button className="header-menu__icon" onClick={handleMenuIcon}>
+                        <MenuIcon />
+                    </button>
+                    <NavigationMenu isMobile={true} handleScrollToSection={handleScrollToSection} CloseIcon={CloseIcon} menuRef={menuRef} handleMenuIcon={handleMenuIcon} icons={icons}/>
+                </div>
+                <div className="header-menu--desktop">
+                    <NavigationMenu isMobile={false} handleScrollToSection={handleScrollToSection} />
+                </div>
             </div>
         </header>
     );
