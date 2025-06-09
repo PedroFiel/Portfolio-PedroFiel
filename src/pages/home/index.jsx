@@ -13,9 +13,9 @@ function Home() {
         <>
             <Header />
             <Introduction />
-            {/* <AboutMe />
+            <AboutMe />
             <Skills />
-            <Experience />  
+            {/* <Experience />  
             <Projects />   
             <ScrollToTop />
             <Footer /> */}
