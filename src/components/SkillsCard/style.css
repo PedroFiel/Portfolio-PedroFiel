@@ -5,23 +5,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: clamp(2rem, 1.5625vw, 3rem);
 
     .icon {
-        width: 8rem;
-        height: 8rem;
+        width: clamp(6rem, 4.16666vw, 8rem);
+        height: clamp(6rem, 4.16666vw, 8rem);
         margin-bottom: 1rem;
     }
 
     .name{
-        font-size: 1.8rem;
+        font-size: clamp(1.4rem, 0.9375vw, 1.8rem);
         color: var(--white-color);
         font-weight: var(--font-weight-semi-bold);
         text-align: center;
     }
 
     .level{
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 0.625vw, 1.2rem);
         color: var(--white-color);
         font-weight: var(--font-weight-normal);
         text-align: center;
