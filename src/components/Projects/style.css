@@ -13,7 +13,7 @@
 
         .header-projects{
             h1{
-                font-size: 3.6rem;
+                font-size: clamp(2.4rem, 1.875vw, 3.6rem);
                 font-weight: var(--font-weight-semi-bold);
                 background: linear-gradient(to right, #c82424, #e43939, #d43e3e);
                 -webkit-background-clip: text;
@@ -23,7 +23,7 @@
             }
 
             p{
-                font-size: 1.6rem;
+                font-size: clamp(1.4rem, 0.83333vw, 1.6rem);
                 font-weight: var(--font-weight-normal);
                 color: var(--white-color);
             }
@@ -31,8 +31,20 @@
 
         .cards-projects{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(1, minmax(0, 1fr));
             gap: 2rem;         
+
+            @media screen and (min-width: 768px) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                @media screen and (min-width: 1024px) {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    
+                    @media screen and (min-width: 1440px) {
+                        grid-template-columns: repeat(4, minmax(0, 1fr));
+                    }
+                }
+            }
         }
     }
 }
