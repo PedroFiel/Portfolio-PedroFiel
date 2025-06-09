@@ -17,8 +17,8 @@ function Home() {
             <Skills />
             <Experience />  
             <Projects />   
-            {/* <ScrollToTop />
-            <Footer /> */}
+            <ScrollToTop />
+            <Footer />
         </>
     );
 }

@@ -93,6 +93,10 @@ function Header() {
                     <NavigationMenu isMobile={false} handleScrollToSection={handleScrollToSection} />
                 </div>
             </div>
+            <div
+                className={`overlay ${isMenuOpen ? 'overlay--active' : ''}`}
+                onClick={handleMenuIcon}
+            ></div>
         </header>
     );
 }
