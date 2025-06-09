@@ -13,12 +13,12 @@ function Home() {
         <>
             <Header />
             <Introduction />
-            <AboutMe />
+            {/* <AboutMe />
             <Skills />
             <Experience />  
             <Projects />   
             <ScrollToTop />
-            <Footer />
+            <Footer /> */}
         </>
     );
 }
