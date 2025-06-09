@@ -1,5 +1,4 @@
 .header-menu__nav {
-
     &.header-menu__nav--mobile {
         display: none;
         flex-direction: column;

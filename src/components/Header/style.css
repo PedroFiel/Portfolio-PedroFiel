@@ -1,12 +1,28 @@
 .header {
     width: 100%;
     background-color: transparent;
-    position: fixed;
+    position: sticky;
     z-index: 999;
     transition: all 0.5s ease;
+    top: 0;
 
     &.header--hidden{
         transform: translateY(-100%);
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+
+        &.overlay--active {
+            display: block;
+        }
     }
 
     &:before {
