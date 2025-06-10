@@ -71,7 +71,7 @@ function Experience() {
                             <div className='section-experience__images'>
                                 {exp.experience_images.map((image, index) => (
                                     <div key={`${exp.id}-image-${index}`} className='section-experience__logo-company'>
-                                        <img src={`assets/img/experience/shakers/${image.src}`} alt={image.alt} />
+                                        <img src={`/assets/img/experience/shakers/${image.src}`} alt={image.alt} />
                                     </div>
                                 ))}
                             </div>

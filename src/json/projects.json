@@ -1,71 +1,70 @@
 [
     {
         "id": 1,
-        "name": "Projeto 1",
+        "name": "Space App",
         "text_techs": "Tech utilizada:",
         "techs": [
-            "React",
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "React.js",
+            "Styled Components"
         ],
-        "description": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.",
+        "description": "Aplicação web responsiva de galeria espacial em React.js que permite aos usuários explorarem e interagirem com imagens do cosmos. Oferece funcionalidades de filtragem por tags, busca por título e visualização detalhada das imagens. Interface imersiva com design moderno e gradiente espacial, focando em performance e experiência do usuário.",
         "card_buttons": [
             {
                 "id": 1,
                 "text": "Ver projeto",
-                "link": "https://www.google.com.br"
+                "link": "https://space-app-two-omega.vercel.app/"
             },
             {
                 "id": 2,
                 "text": "Github",
-                "link": "https://www.google.com.br"
+                "link": "https://github.com/PedroFiel/SpaceApp"
             }
         ]
     },
     {
         "id": 2,
-        "name": "Projeto 2",
+        "name": "Organo",
         "text_techs": "Tech utilizada:",
         "techs": [
-            "React",
-            "CSS",
-            "JavaScript"
+            "React.js",
+            "JavaScript",
+            "CSS3",
+            "HTML5"
         ],
-        "description": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.A API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto",
+        "description": "Aplicação web em React.js para organização de times tecnológicos, permitindo cadastro e gerenciamento de colaboradores em diferentes áreas como Programação, Front-End, Data Science e outras. Sistema completo com funcionalidades de favoritos, exclusão de membros e personalização de cores por time. Interface moderna e colorida com design responsivo para gestão eficiente de equipes.",
         "card_buttons": [
             {
                 "id": 1,
                 "text": "Ver projeto",
-                "link": "https://www.google.com.br"
+                "link": "https://organo-seven-green-20.vercel.app/"
             },
             {
                 "id": 2,
                 "text": "Github",
-                "link": "https://www.google.com.br"
+                "link": "https://github.com/PedroFiel/organo"
             }
         ]
     },
     {
         "id": 3,
-        "name": "Projeto 3",
+        "name": "Olá Mundo",
         "text_techs": "Tech utilizada:",
         "techs": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "React.js",
+            "React Router DOM",
+            "CSS Modules"
         ],
-        "description": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.",
+        "description": "Aplicação web em React.js com sistema de rotas moderno usando React Router DOM e React Markdown para renderização de conteúdo. Estrutura modular bem organizada com componentes reutilizáveis e estilização através de CSS Modules. Implementa boas práticas de desenvolvimento com arquitetura clara e navegação fluida entre seções.",
         "card_buttons": [
             {
                 "id": 1,
                 "text": "Ver projeto",
-                "link": "https://www.google.com.br"
+                "link": "https://ola-mundo-omega-nine.vercel.app/"
             },
             {
                 "id": 2,
                 "text": "Github",
-                "link": "https://www.google.com.br"
+                "link": "https://github.com/PedroFiel/Ola-Mundo.git"
             }
         ]
     },
@@ -78,17 +77,17 @@
             "CSS",
             "JavaScript"
         ],
-        "description": "Aplicação React de Repositórios Públicos do GitHub, desenvolvida com React e a API do GitHub, permite visualizar repositórios públicos, exibindo nome, linguagem e link direto.",
+        "description": "Em andamento...",
         "card_buttons": [
             {
                 "id": 1,
                 "text": "Ver projeto",
-                "link": "https://www.google.com.br"
+                "link": "https://github.com/PedroFiel"
             },
             {
                 "id": 2,
                 "text": "Github",
-                "link": "https://www.google.com.br"
+                "link": "https://github.com/PedroFiel"
             }
         ]
     }

@@ -96,10 +96,17 @@
                             text-decoration: none;
                             display: block;
 
+                            &:hover{
+                                img{
+                                    transform: scale(1.1);
+                                }
+                            }
+
                             img {
                                 width: clamp(3.4rem, 2.29166vw, 4.4rem);
                                 height: auto;
                                 display: block;
+                                transition: 0.3s all ease-in-out;
                             }
                         }
                     }

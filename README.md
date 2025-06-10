@@ -3,6 +3,8 @@
 [![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.3.4-brightgreen.svg)](https://vitejs.dev/)
 
+🌐 **[Acesse meu portfólio aqui](https://portfolio-pedro-fiel.vercel.app/)**
+
 ## 📋 Sobre o Projeto
 
 Este é meu portfólio pessoal, desenvolvido com React e Vite, onde apresento minhas habilidades, projetos e experiências profissionais. O site foi construído com foco em performance, acessibilidade e design responsivo.
@@ -68,6 +70,7 @@ O projeto utiliza as seguintes ferramentas de desenvolvimento:
 
 ## 📬 Contato
 
+- **Website:** [portfolio-pedro-fiel.vercel.app](https://portfolio-pedro-fiel.vercel.app/)
 - **Email:** pedrofiel.dev@gmail.com
 - **LinkedIn:** [linkedin.com/in/pedro-freitas-fiel](https://www.linkedin.com/in/pedro-freitas-fiel-bb9315250/)
 - **GitHub:** [github.com/PedroFiel](https://github.com/PedroFiel)

@@ -33,7 +33,7 @@ function Header() {
             }
             setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
         };
-
+        
         window.addEventListener('scroll', handleScroll);
         
         return () => {
@@ -68,12 +68,16 @@ function Header() {
         if (menuRef.current) {
             menuRef.current.setAttribute('open', '');
         }
+
+        document.body.style.overflow = 'hidden';
     };
 
     const closeMenuIcon = () => {
         if (menuRef.current) {
             menuRef.current.removeAttribute('open');
         }
+
+        document.body.style.overflow = 'auto';
     };
 
     return (

@@ -50,12 +50,12 @@ function Introduction() {
               <li><a href="mailto:pedrofiel.dev@gmail.com" target="_blank"><img src={Email} alt="Icone Email"/></a></li>
               <li><a href="https://github.com/PedroFiel" target="_blank"><img src={Github} alt="Icone Github"/></a></li>
               <li><a href="https://www.linkedin.com/in/pedro-freitas-fiel-bb9315250/" target="_blank"><img src={Linkedin} alt="Icone Linkedin"/></a></li>
-              <li><a href="#"><img src={Curriculo} alt="Icone Curriculo"/></a></li>
+              <li><a href="/PedroFiel_CV.pdf" download="Pedro-Fiel-Curriculo.pdf"><img src={Curriculo} alt="Icone Curriculo"/></a></li>
             </ul>
           </div>
         </div>
         <div className='introduction__image'>
-          <img src={Pedro} alt="Foto de Perfil"/>
+          <img src={Pedro} alt="Foto de Perfil" loading='eager'/>
         </div>
       </div>
     </div>
