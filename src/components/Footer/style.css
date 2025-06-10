@@ -60,6 +60,11 @@
                         font-weight: var(--font-weight-medium);
                         text-decoration: none;
                         cursor: pointer;
+                        transition: 0.3s all ease-in-out;
+
+                        &:hover{
+                            color: var(--primary-color);
+                        }
                     }
                     
                 }

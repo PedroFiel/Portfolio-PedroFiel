@@ -112,6 +112,12 @@
                         background-color: var(--secondary-color);
                         padding: clamp(2rem, 1.5625vw, 3rem);
                         border-radius: 1rem;
+                        transition: 0.3s all ease-in-out;
+
+                        &:hover{
+                            background-color: var(--secondary-color);
+                            opacity: 0.8;
+                        }
 
                         p {
                             font-size: clamp(1.4rem, 0.83333vw, 1.6rem);

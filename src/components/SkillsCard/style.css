@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: center;
     padding: clamp(2rem, 1.5625vw, 3rem);
+    transition: 0.3s all ease-in-out;
+
+    &:hover{
+        transform: translateY(-5px);
+    }
 
     .icon {
         width: clamp(6rem, 4.16666vw, 8rem);
